@@ -143,9 +143,9 @@ async def admin_callback(
 
 
 def main():
-        asyncio.set_event_loop(asyncio.new_event_loop())
+    asyncio.set_event_loop(asyncio.new_event_loop())
     if not BOT_TOKEN:
-        raise RuntimeError("BOT_TOKEN is missing from environment secrets.")
+        raise RuntimeError("BOT_TOKEN is missing")
 
     init_db()
 
