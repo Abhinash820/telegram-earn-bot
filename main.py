@@ -157,7 +157,7 @@ def main():
     ))
     app.add_handler(CallbackQueryHandler(button_handler))
 
-    app.run_polling()
+    app.run_polling(close_loop=False)
 
 
 if __name__ == "__main__":
